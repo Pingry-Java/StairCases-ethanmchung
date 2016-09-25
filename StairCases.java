@@ -14,7 +14,6 @@ public class StairCases
 	* Main method demonstrates the other wo methods by calling each of them.
 	* @param args Standard array of commandline String arguments. Not used in this program.
 	*/
-
 	public static void main(String[] args)
 	{
 		Scanner scan = new Scanner(System.in);
@@ -22,7 +21,7 @@ public class StairCases
 		int size = scan.nextInt();
 		
 		printAscending(size);
-    	printDescending(size);
+		printDescending(size);
 	}
 
 	/**
