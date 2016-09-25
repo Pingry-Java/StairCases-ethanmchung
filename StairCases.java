@@ -26,8 +26,9 @@ public class StairCases
 	}
 
 	/**
-	* prints out the ascending part of the staircase
-	* @param 
+	* prints out the ascending part of the staircase and then a new line to separate...
+	* ...the ascending staircase from the descending staircase
+	* @param size  the user's entered length
 	*/
 	public static void printAscending(int size)
 	{
@@ -45,7 +46,8 @@ public class StairCases
 	}
  
 	/**
-	* Write your javadoc here
+	* prints out the descending part of the staircase
+	* @param size  the user's entered length
 	*/
 	public static void printDescending(int size)
 	{
