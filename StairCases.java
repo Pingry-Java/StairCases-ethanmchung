@@ -1,33 +1,62 @@
+import java.util.Scanner;
+
 /**
- * Write javadoc for your class here (and remove this comment, or course)
- *
+ * this class gets an integer input from the user and prints ascending and descending... 
+ * ...staircases of 'x' characters. The program is restricted to only use a single literal
+ * which is either the char 'x' or the String "x".
+ * @author Ethan Chung
+ * @version 1.0
  */
 
 public class StairCases
 {
-  /**
-   * Main method demonstrates the other wo methods by calling each of them.
-   * @param args Standard array of commandline String arguments. Not used in this program.
-   */
+	/**
+	* Main method demonstrates the other wo methods by calling each of them.
+	* @param args Standard array of commandline String arguments. Not used in this program.
+	*/
 
-  public static void main(String[] args)
-  {
-    //TODO change the next line so it actually gets input from the user
-    int size = 4;
+	public static void main(String[] args)
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter an integer to represent the length of the staircases");
+		int size = scan.nextInt();
+		
+		printAscending(size);
+    	printDescending(size);
+	}
 
-    printAscending(size);
-    printDescending(size);
-  }
-
-  /**
-   * Write your javadoc here
-   */
-  public static void printAscending
-  //TODO Finish this method
-
-  /**
-   * Write your javadoc here
-   */
-  public static void printDescending
-  //TODO Finish this method
+	/**
+	* 
+	* @param 
+	*/
+	public static void printAscending(int size)
+	{
+		int counter = 0;
+		for (int x = 0; x < size; x++)
+		{	
+			counter ++;
+			for (int y = 0; y < counter; y++)
+			{
+				System.out.print("x ");
+			}
+			System.out.print("\n");
+		}
+	}
+ 
+	/**
+	* Write your javadoc here
+	*/
+	public static void printDescending(int size)
+	{
+		int counter = size;
+		for (int x = 0; x < size; x++)
+		{	
+			counter --;	
+			for (int y = 0; y < counter; y++)
+			{
+				System.out.print("x ");
+			}
+			System.out.print("\n");
+		}
+	}
 }
