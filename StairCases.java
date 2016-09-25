@@ -26,7 +26,7 @@ public class StairCases
 	}
 
 	/**
-	* 
+	* prints out the ascending part of the staircase
 	* @param 
 	*/
 	public static void printAscending(int size)
@@ -41,6 +41,7 @@ public class StairCases
 			}
 			System.out.print("\n");
 		}
+		System.out.print("\n");
 	}
  
 	/**
@@ -48,7 +49,7 @@ public class StairCases
 	*/
 	public static void printDescending(int size)
 	{
-		int counter = size;
+		int counter = size + 1;
 		for (int x = 0; x < size; x++)
 		{	
 			counter --;	
