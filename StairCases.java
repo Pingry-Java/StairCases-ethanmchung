@@ -26,8 +26,7 @@ public class StairCases
 	}
 
 	/**
-	* prints out the ascending part of the staircase and then a new line to separate...
-	* ...the ascending staircase from the descending staircase
+	* prints out the ascending part of the staircase
 	* @param size  the user's entered length
 	*/
 	public static void printAscending(int size)
