@@ -21,27 +21,26 @@ public class StairCases
 		int size = scan.nextInt();
 		
 		printAscending(size);
+		System.out.println();
 		printDescending(size);
 	}
 
 	/**
-	* prints out the ascending part of the staircase and then a new line to separate...
-	* ...the ascending staircase from the descending staircase
+	* prints out the ascending part of the staircase
 	* @param size  the user's entered length
 	*/
 	public static void printAscending(int size)
 	{
-		int counter = 0;
-		for (int x = 0; x < size; x++)
-		{	
-			counter ++;
-			for (int y = 0; y < counter; y++)
-			{
-				System.out.print("x ");
-			}
-			System.out.print("\n");
-		}
-		System.out.print("\n");
+		if (size > 1)
+  		{
+  			printAscending(size - 1); 
+  		}
+  		for (int x = 0; x < size; x++)
+  		{
+  			System.out.print("x "); 
+  		}
+  		System.out.println(); 
+  		
 	}
  
 	/**
@@ -50,15 +49,12 @@ public class StairCases
 	*/
 	public static void printDescending(int size)
 	{
-		int counter = size + 1;
 		for (int x = 0; x < size; x++)
-		{	
-			counter --;	
-			for (int y = 0; y < counter; y++)
-			{
-				System.out.print("x ");
-			}
-			System.out.print("\n");
+		{
+			System.out.print("x ");
 		}
+		System.out.println();
+		if (size > 1)
+			printDescending(size-1);
 	}
 }
