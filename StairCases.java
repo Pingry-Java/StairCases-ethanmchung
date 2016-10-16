@@ -45,7 +45,7 @@ public class StairCases
  
 	/**
 	* prints out the descending part of the staircase
-	* @param size  the user's entered length
+	* @param size  the user's entered length 
 	*/
 	public static void printDescending(int size)
 	{
