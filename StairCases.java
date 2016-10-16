@@ -57,4 +57,4 @@ public class StairCases
 		if (size > 1)
 			printDescending(size-1);
 	}
-} //Hw: modify this so it's recursive: git branch recursive, git checkout recursive, git merge, moodle quiz
+}
